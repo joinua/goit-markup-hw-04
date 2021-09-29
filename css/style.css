@@ -1,6 +1,7 @@
 :root {
   --main-color: #212121;
   --secon-color: #757575;
+  --svg-fill-color: #afb1b8;
 }
 
 body {
@@ -38,6 +39,12 @@ header .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
 
 /* logo */
