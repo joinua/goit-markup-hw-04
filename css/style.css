@@ -110,9 +110,6 @@ header .container {
   color: var(--accent-color);
 }
 
-.contacts .page {
-}
-
 .page:hover,
 .page:focus {
   color: var(--accent-color);
@@ -225,7 +222,7 @@ header .container {
   padding-top: 0;
 }
 
-.section-title {
+.title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -239,20 +236,61 @@ header .container {
   width: calc((100% - 60px) / 3);
 }
 
-.comanda {
-  background: #f5f4fa;
+/*   *****  team list  *****    */
+
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  background-color: #f5f4fa;
 }
 
-.card {
-  width: calc((100% - 90px) / 4);
-  height: 368px;
-  background: #ffffff;
+.team .social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team .list-item {
+  max-width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
-.card-title {
+.social-list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .social {
+  display: flex;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--svg-fill-color);
+}
+
+.team .social:hover,
+.team .social:focus {
+  background-color: var(--accent-color);
+  fill: #fff;
+}
+
+.team .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -270,7 +308,7 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--secon-color);
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .footer-block {
@@ -330,6 +368,8 @@ header .container {
 
 .list {
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .filter {
