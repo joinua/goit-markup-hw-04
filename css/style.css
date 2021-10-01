@@ -102,6 +102,13 @@ header .container {
 }
 
 .site-nav .page {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .page {
   margin-right: 50px;
   text-transform: capitalize;
 }
@@ -297,7 +304,6 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 30px;
 }
 
 .card-text {
@@ -329,6 +335,12 @@ header .container {
   margin-bottom: 9px;
 }
 
+.list {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-list {
   margin-bottom: 9px;
 }
@@ -352,6 +364,48 @@ header .container {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-left-box {
+  margin-right: 70px;
+}
+
+.footer-center {
+  padding-top: 12px;
+}
+
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-center .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-center .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-block > .row {
+  display: flex;
+  justify-content: start;
+}
+
+.social-list .social:hover,
+.social-list .social:focus {
+  background-color: var(--accent-color);
+}
+
 /* портфолио */
 
 .section {
@@ -364,12 +418,6 @@ header .container {
   display: flex;
   margin-left: 8px;
   margin-top: 94px;
-}
-
-.list {
-  justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .filter {
@@ -409,6 +457,10 @@ header .container {
 
 .projects .list-item {
   max-width: calc((100% - 60px) / 3);
+}
+
+.list-item .item {
+  padding-top: 30px;
 }
 
 .projects .list-item:not(:nth-child(3n)) {
@@ -534,4 +586,39 @@ header .container {
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+}
+
+/* clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item {
+  width: calc((100% - 150px) / 6);
+}
+
+.client {
+  display: flex;
+  fill: var(--svg-fill-color);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--svg-fill-color);
+  border-radius: 4px;
+}
+
+.client > .icon {
+  width: 106px;
+}
+
+.client:hover,
+.client:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
